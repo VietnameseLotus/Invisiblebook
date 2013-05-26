@@ -53,6 +53,9 @@
     <StartupObject>Invisiblebook.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.104.1\lib\net35\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,39 +68,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helper\WebRequester.cs" />
-    <Compile Include="RestSharp\Authenticators\HttpBasicAuthenticator.cs" />
-    <Compile Include="RestSharp\Authenticators\IAuthenticator.cs" />
-    <Compile Include="RestSharp\Authenticators\NtlmAuthenticator.cs" />
-    <Compile Include="RestSharp\Authenticators\OAuth1Authenticator.cs" />
-    <Compile Include="RestSharp\Authenticators\OAuth2Authenticator.cs" />
-    <Compile Include="RestSharp\Authenticators\SimpleAuthenticator.cs" />
-    <Compile Include="RestSharp\Enum.cs" />
-    <Compile Include="RestSharp\FileParameter.cs" />
-    <Compile Include="RestSharp\Http.Async.cs" />
-    <Compile Include="RestSharp\Http.cs" />
-    <Compile Include="RestSharp\Http.Sync.cs" />
-    <Compile Include="RestSharp\HttpCookie.cs" />
-    <Compile Include="RestSharp\HttpFile.cs" />
-    <Compile Include="RestSharp\HttpHeader.cs" />
-    <Compile Include="RestSharp\HttpParameter.cs" />
-    <Compile Include="RestSharp\HttpResponse.cs" />
-    <Compile Include="RestSharp\IHttp.cs" />
-    <Compile Include="RestSharp\IHttpFactory.cs" />
-    <Compile Include="RestSharp\IHttpResponse.cs" />
-    <Compile Include="RestSharp\IRestClient.cs" />
-    <Compile Include="RestSharp\IRestRequest.cs" />
-    <Compile Include="RestSharp\IRestResponse.cs" />
-    <Compile Include="RestSharp\Parameter.cs" />
-    <Compile Include="RestSharp\RestClient.Async.cs" />
-    <Compile Include="RestSharp\RestClient.cs" />
-    <Compile Include="RestSharp\RestClient.Sync.cs" />
-    <Compile Include="RestSharp\RestClientExtensions.cs" />
-    <Compile Include="RestSharp\RestRequest.cs" />
-    <Compile Include="RestSharp\RestRequestAsyncHandle.cs" />
-    <Compile Include="RestSharp\RestResponse.cs" />
-    <Compile Include="RestSharp\RestResponseCookie.cs" />
-    <Compile Include="RestSharp\SharedAssemblyInfo.cs" />
-    <Compile Include="RestSharp\SimpleJson.cs" />
     <Compile Include="View\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +92,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
