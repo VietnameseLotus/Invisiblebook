@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="71fe9883-f1c9-4c7f-bafb-462af23e5b4b"
   name="Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -142,9 +142,207 @@ Return : class BookInfo</body>
     <packageHasNamedElement>
       <actor
         Id="f8764836-95a2-4fc8-b67b-9f04a1a9b971"
-        name="Actor1"
+        name="Client"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7af56501-f970-4f54-85fa-e3ea67d97be8"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Lấy danh mục"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="cb490450-6606-4b68-bbcc-b414e948348e"
+              LastKnownName="Lấy danh mục"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a093d83-ad61-4287-bfd0-434b03e9d84f"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="196bf414-0de9-4529-a113-b856024406bb"
+                  name="Lấy danh mục"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0280c811-a6e6-4f99-b30f-a174d8ad84c3"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Lấy list sách mới"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="640aa44e-2c91-43b8-9ab4-95b22db19565"
+              LastKnownName="Lấy list sách mới"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e4c7fcb-169e-41bc-91fa-8a9879625fb5"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a092503b-e005-4415-84f1-9e51dd433fa0"
+                  name="Lấy list sách mới"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="32e4cc40-50ad-40c8-8ee0-1e3168cd6eef"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Lấy list sách"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="10047c3d-9b74-4923-bf8f-47832ba7b174"
+              LastKnownName="Lấy list sách"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93714a5a-8070-441f-902e-3e53237be6dc"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ee3f7935-5f28-402f-bd7c-99bbf8ba5eac"
+                  name="Lấy list sách"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4f4a71f8-8538-405a-9e77-7eb256dd4bd1"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Lấy thông tin sách"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ed39c67d-81cc-476e-a9b0-cc8f442623ac"
+              LastKnownName="Lấy thông tin sách"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf9f8ad6-2549-4790-ad29-4d84b055da2e"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3862b82c-a876-4810-9c62-16e301c9c57c"
+                  name="Lấy thông tin sách"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5b6a7008-d0d4-4e78-9d75-f8757e1e23a4"
+            isDerived="false"
+            sourceEndRoleName="Client"
+            targetEndRoleName="Tải sách"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="525f500a-757f-478d-8c71-3226c3466062"
+              LastKnownName="Tải sách"
+              LastKnownLocation="Modeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e2d7cb3a-38d8-42de-b4d5-a79177904889"
+                  name="Client"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8280785f-a131-42f6-9055-f410d7796215"
+                  name="Tải sách"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -867,24 +1065,6 @@ Return : class BookInfo</body>
             </type_NamedElement>
           </property>
           <property
-            Id="592d4a0c-1d12-41a0-a525-2fc67bdade05"
-            name="AudioContent"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <classMoniker
-                Id="19c765c8-9734-47b0-ad3e-4510f6dc0dd5"
-                LastKnownName="Media"
-                LastKnownLocation="Modeling.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="02dd6b6a-e2cb-48ac-9eba-5d2053c5cfc2"
             name="Category"
             isLeaf="false"
@@ -1278,6 +1458,72 @@ Return : class BookInfo</body>
                 LastKnownLocation="Modeling.uml" />
             </type_NamedElement>
           </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8a67575f-b11a-4530-bcb5-4213224e1e87"
+        name="Chapter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1564d6c4-c3b7-48ce-a6f2-05f6d98c8cfd"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="39c6eb1b-6301-48f6-86d4-7cbf8fef3fe1"
+            name="BookID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="944f15db-4c5c-471d-b602-05d1512c1f94"
+            name="AudioName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6e1ffb0d-f569-4da6-8606-be0c66bafe0c"
+            name="AudioContent"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="df24b418-ddc7-44ee-a37d-307402d84d62"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="86303e53-9eb5-4be2-8e5b-89a2ba47a9f8" name="UMLUseCaseDiagram1" linkedPackageId="78e78a46-718b-4e7c-8f6b-11aeeb7f0ca0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="86303e53-9eb5-4be2-8e5b-89a2ba47a9f8" name="UMLUseCaseDiagram1" linkedPackageId="78e78a46-718b-4e7c-8f6b-11aeeb7f0ca0" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="433e6201-10be-4be2-8679-a3ed43cd164b">
       <elementDefinition Id="4c51dc4d-10f7-4a13-9ce3-3bc3e90b0f23" />
@@ -99,36 +99,92 @@ Return : class BookInfo</body>
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="8cbf5216-585a-4a04-a93d-ee30068df7cf">
-      <profileInstance Id="c5df9f84-43f4-450a-bb2b-351063bcbe24" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="8089ff59-8d6f-439a-a9f8-422e9fe2a862">
-      <profileInstance Id="54de7fd5-ec1b-4ec0-b57d-7548d9f49b70" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="0d2bc62f-829a-403f-b001-6dc4feb96c2d">
-      <profileInstance Id="0759ad0c-7ca3-4ad3-8989-6f5f86e45f5e" name="CSharpProfile">
-        <elementDefinition Id="3afbdeb0-5a02-4e3d-8b24-c13e5ea5cc47" />
-      </profileInstance>
-      <elementDefinition Id="f5be0ab6-5761-48c7-a123-7aef0dd8d2d2" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="aeeff66e-9afe-4e1f-83bc-7a5fdb294419">
-      <profileInstance Id="55577646-bc47-47e9-8865-3cd29aa7d8e4" name="TextTemplateBindings">
-        <elementDefinition Id="f439aaf7-9edc-4322-b020-59c02e88433d" />
-      </profileInstance>
-      <elementDefinition Id="d4319b79-dd7c-45c1-b631-1095d1506bd0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="41f85b22-41f5-4421-8c7e-9b2f549f44d0" name="Actor1" isAbstract="false" isLeaf="false">
+      <actor Id="41f85b22-41f5-4421-8c7e-9b2f549f44d0" name="Client" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f8764836-95a2-4fc8-b67b-9f04a1a9b971" />
+        <targetEnds>
+          <association Id="2f13c16b-5fe6-4aa6-805e-bf4477401af5" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Lấy danh mục" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3ba9ad7e-6a37-4f3d-b61e-2470ac7cbca1" LastKnownName="Lấy danh mục" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0ee8abf2-110d-4769-9ebb-0817e99c3fc4" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9a093d83-ad61-4287-bfd0-434b03e9d84f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="214fb698-b852-49e1-a2d8-4687a11b32b3" name="Lấy danh mục" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="196bf414-0de9-4529-a113-b856024406bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7af56501-f970-4f54-85fa-e3ea67d97be8" />
+          </association>
+          <association Id="a0950547-a2c7-4218-b33c-97f095beb864" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Lấy list sách mới" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e6031b91-47f7-45ed-a3b9-234b53c3b9f8" LastKnownName="Lấy list sách mới" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44963451-cd7d-4b9a-8133-4933f9866c29" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2e4c7fcb-169e-41bc-91fa-8a9879625fb5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30c8f94c-c0b2-4670-a875-f181b38f3f9e" name="Lấy list sách mới" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a092503b-e005-4415-84f1-9e51dd433fa0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0280c811-a6e6-4f99-b30f-a174d8ad84c3" />
+          </association>
+          <association Id="ae2ccec2-4002-427c-aa90-4ff96993a21f" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Lấy list sách" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e4211651-1c89-411b-b43e-4de08e3459c4" LastKnownName="Lấy list sách" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ca0c6ec4-bee6-4565-9b8c-13bc5f29586d" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93714a5a-8070-441f-902e-3e53237be6dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="193f16a1-a154-45b6-b0b7-f2be25322302" name="Lấy list sách" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ee3f7935-5f28-402f-bd7c-99bbf8ba5eac" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="32e4cc40-50ad-40c8-8ee0-1e3168cd6eef" />
+          </association>
+          <association Id="8adcf7f8-b98c-456a-bfbd-62eafc9a4575" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Lấy thông tin sách" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="31022ec7-f2a2-4122-9513-587645a0167b" LastKnownName="Lấy thông tin sách" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a70abb64-8267-43ab-8eb0-df1bd776be5a" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cf9f8ad6-2549-4790-ad29-4d84b055da2e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0dfd005-d4b4-4dfe-83c0-702e167b13bf" name="Lấy thông tin sách" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3862b82c-a876-4810-9c62-16e301c9c57c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4f4a71f8-8538-405a-9e77-7eb256dd4bd1" />
+          </association>
+          <association Id="8f128c62-f695-429f-b4bf-97f7c857777e" isDerived="false" sourceEndRoleName="Client" targetEndRoleName="Tải sách" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="47ee2ab6-773f-442a-ac2c-873281e22529" LastKnownName="Tải sách" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fe98c88-f248-4d6d-8588-43a3a52f0d29" name="Client" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e2d7cb3a-38d8-42de-b4d5-a79177904889" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5cd1bf9e-fb02-4d4f-b2b7-80a488314a1f" name="Tải sách" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8280785f-a131-42f6-9055-f410d7796215" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5b6a7008-d0d4-4e78-9d75-f8757e1e23a4" />
+          </association>
+        </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -159,5 +215,31 @@ Return : class BookInfo</body>
   </packagedElements>
   <package Id="78e78a46-718b-4e7c-8f6b-11aeeb7f0ca0" name="Modeling">
     <elementDefinition Id="71fe9883-f1c9-4c7f-bafb-462af23e5b4b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8cbf5216-585a-4a04-a93d-ee30068df7cf">
+        <profileInstance Id="c5df9f84-43f4-450a-bb2b-351063bcbe24" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8089ff59-8d6f-439a-a9f8-422e9fe2a862">
+        <profileInstance Id="54de7fd5-ec1b-4ec0-b57d-7548d9f49b70" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0d2bc62f-829a-403f-b001-6dc4feb96c2d">
+        <profileInstance Id="0759ad0c-7ca3-4ad3-8989-6f5f86e45f5e" name="CSharpProfile">
+          <elementDefinition Id="3afbdeb0-5a02-4e3d-8b24-c13e5ea5cc47" />
+        </profileInstance>
+        <elementDefinition Id="f5be0ab6-5761-48c7-a123-7aef0dd8d2d2" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="aeeff66e-9afe-4e1f-83bc-7a5fdb294419">
+        <profileInstance Id="55577646-bc47-47e9-8865-3cd29aa7d8e4" name="TextTemplateBindings">
+          <elementDefinition Id="f439aaf7-9edc-4322-b020-59c02e88433d" />
+        </profileInstance>
+        <elementDefinition Id="d4319b79-dd7c-45c1-b631-1095d1506bd0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

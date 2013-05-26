@@ -3,29 +3,69 @@
   <useCaseModelRootMoniker Id="86303e53-9eb5-4be2-8e5b-89a2ba47a9f8" />
   <nestedChildShapes>
     <actorShape Id="ada075ef-f4ad-4aa1-a6ff-c954747b995d" absoluteBounds="0.875, 2.125, 0.5, 0.5" isReference="false" heightOffset="0">
-      <actorMoniker Id="41f85b22-41f5-4421-8c7e-9b2f549f44d0" LastKnownName="Actor1" />
+      <actorMoniker Id="41f85b22-41f5-4421-8c7e-9b2f549f44d0" LastKnownName="Client" />
       <relativeChildShapes />
     </actorShape>
     <useCaseShape Id="234bba1a-1b9b-496e-acb8-5330dc2fb1c8" absoluteBounds="3.375, 0.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="3ba9ad7e-6a37-4f3d-b61e-2470ac7cbca1" LastKnownName="Lấy danh mục" />
       <relativeChildShapes />
     </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.25); (3.52144660940673 : 1.17677669529664)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="2f13c16b-5fe6-4aa6-805e-bf4477401af5" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ada075ef-f4ad-4aa1-a6ff-c954747b995d" />
+        <useCaseShapeMoniker Id="234bba1a-1b9b-496e-acb8-5330dc2fb1c8" />
+      </nodes>
+    </useCaseAssociationConnector>
     <useCaseShape Id="660cc71c-6d0e-4bf7-b5f9-d9fd1774193e" absoluteBounds="3.375, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="e6031b91-47f7-45ed-a3b9-234b53c3b9f8" LastKnownName="Lấy list sách mới" />
       <relativeChildShapes />
     </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.32954545454545); (3.40510328825578 : 1.96043576577168)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a0950547-a2c7-4218-b33c-97f095beb864" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ada075ef-f4ad-4aa1-a6ff-c954747b995d" />
+        <useCaseShapeMoniker Id="660cc71c-6d0e-4bf7-b5f9-d9fd1774193e" />
+      </nodes>
+    </useCaseAssociationConnector>
     <useCaseShape Id="cfa97734-a2cd-4436-ad2c-df64298e360c" absoluteBounds="3.375, 2.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="e4211651-1c89-411b-b43e-4de08e3459c4" LastKnownName="Lấy list sách" />
       <relativeChildShapes />
     </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.44318181818182); (3.43605221354281 : 3.00528696732986)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="ae2ccec2-4002-427c-aa90-4ff96993a21f" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ada075ef-f4ad-4aa1-a6ff-c954747b995d" />
+        <useCaseShapeMoniker Id="cfa97734-a2cd-4436-ad2c-df64298e360c" />
+      </nodes>
+    </useCaseAssociationConnector>
     <useCaseShape Id="702b4490-7ce3-42d4-af0b-996332b73872" absoluteBounds="3.375, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="31022ec7-f2a2-4122-9513-587645a0167b" LastKnownName="Lấy thông tin sách" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseShape Id="84219d38-1ed5-4043-a383-6ab2fe01a894" absoluteBounds="3.375, 5, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.53409090909091); (3.56608922403405 : 3.92842041529439)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8adcf7f8-b98c-456a-bfbd-62eafc9a4575" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ada075ef-f4ad-4aa1-a6ff-c954747b995d" />
+        <useCaseShapeMoniker Id="702b4490-7ce3-42d4-af0b-996332b73872" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="84219d38-1ed5-4043-a383-6ab2fe01a894" absoluteBounds="3.375, 4.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="47ee2ab6-773f-442a-ac2c-873281e22529" LastKnownName="Tải sách" />
       <relativeChildShapes />
     </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.375 : 2.60227272727273); (3.63404062511392 : 4.65594602283084)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8f128c62-f695-429f-b4bf-97f7c857777e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="ada075ef-f4ad-4aa1-a6ff-c954747b995d" />
+        <useCaseShapeMoniker Id="84219d38-1ed5-4043-a383-6ab2fe01a894" />
+      </nodes>
+    </useCaseAssociationConnector>
     <commentShape Id="526a935f-e284-4a88-b94e-8dea2ba82451" absoluteBounds="4.5, 0.75, 4.25, 0.625" customColor="251, 247, 200">
       <commentMoniker Id="433e6201-10be-4be2-8679-a3ed43cd164b" />
       <relativeChildShapes />
