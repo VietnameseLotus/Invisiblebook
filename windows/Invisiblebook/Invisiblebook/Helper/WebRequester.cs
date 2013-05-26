@@ -33,13 +33,22 @@ namespace Invisiblebook.Helper
             return _instance;
         }
         /// <summary>
-        /// 
+        /// Lấy danh sách book mới
         /// </summary>
+        /// <param name="catID">ID của category, để -1 nếu không phân biệt category</param>
         /// <returns></returns>
-        public List<Book> GetLatestPostList()
+        public List<Book> GetLatestPostList(int catID)
         {
             List<Book> result = new List<Book>();
+            RestRequest request = new RestRequest(Method.POST);
 
+
+            request.AddParameter("action", "GetLatestPostList");
+
+            _Client.ExecuteAsync(request, response =>
+            {
+                Console.WriteLine(response.Content);
+            });
             return result;
         }
 
