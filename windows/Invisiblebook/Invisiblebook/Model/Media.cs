@@ -9,7 +9,6 @@ namespace Invisiblebook.Model
     {
         #region Private var
         private int _ID;
-        private string _FileName;
         private string _FileURL;
         /// <summary>
         /// Người đọc
@@ -24,10 +23,9 @@ namespace Invisiblebook.Model
         {
             _ID = -1;
         }
-        public Media(int id, string fileName, string fileURL, string announcer, DateTime modifyDate)
+        public Media(int id, string fileURL, string announcer, DateTime modifyDate)
         {
             _ID = id;
-            _FileName = fileName;
             _FileURL = fileURL;
             _Announcer = announcer;
             _ModifyDate = modifyDate;
@@ -40,12 +38,8 @@ namespace Invisiblebook.Model
             get { return _ID; }
             set { _ID = value; }
         }
-        public string FileName
-        {
-            get { return _FileName; }
-            set { _FileName = value; }
-        }
-        public string FileURL 
+
+        public string FileURL
         {
             get { return _FileURL; }
             set { _FileURL = value; }

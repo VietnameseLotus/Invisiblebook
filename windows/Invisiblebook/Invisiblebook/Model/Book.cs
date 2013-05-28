@@ -14,6 +14,8 @@ namespace Invisiblebook.Model
         private string _ReleaseYear;
         private string _Publisher;
 
+        private Category _Category;
+
         private Media _AudioName; //Not be blank
         private Media _AudioDescription; //Can be blank
 
@@ -61,6 +63,13 @@ namespace Invisiblebook.Model
             get { return _ReleaseYear; }
             set { _ReleaseYear = value; }
         }
+
+        public Category Category
+        {
+            get { return _Category; }
+            set { _Category = value; }
+        }
+
         /// <summary>
         /// Audio của tên sách, không thể trống
         /// </summary>
