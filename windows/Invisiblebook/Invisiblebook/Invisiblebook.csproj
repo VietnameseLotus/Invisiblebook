@@ -26,6 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <RunCodeAnalysis>true</RunCodeAnalysis>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,6 +35,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight.WPF4">
@@ -48,6 +50,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\MahApps.Metro.0.10.1.1\lib\net45\MahApps.Metro.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Practices.ServiceLocation">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\WPF4\Microsoft.Practices.ServiceLocation.dll</HintPath>
@@ -58,9 +61,6 @@
     <Reference Include="Microsoft.Practices.Unity.Configuration">
       <HintPath>..\packages\Unity.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp">
-      <HintPath>..\packages\RestSharp.104.1\lib\net4\RestSharp.dll</HintPath>
-    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -68,7 +68,6 @@
       <HintPath>..\packages\MahApps.Metro.0.10.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -87,20 +86,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Business\BookRepository.cs" />
-    <Compile Include="Business\CategoryRepository.cs" />
-    <Compile Include="Business\ChapterRepository.cs" />
-    <Compile Include="Business\IBookRepository.cs" />
-    <Compile Include="Business\ICategoryRepository.cs" />
-    <Compile Include="Business\IChapterRepository.cs" />
-    <Compile Include="Design\DesignDataService.cs" />
-    <Compile Include="Model\Book.cs" />
-    <Compile Include="Model\Category.cs" />
-    <Compile Include="Model\Chapter.cs" />
-    <Compile Include="Model\DataItem.cs" />
-    <Compile Include="Model\DataService.cs" />
-    <Compile Include="Model\IDataService.cs" />
-    <Compile Include="Model\Media.cs" />
     <Compile Include="Resources\Strings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -125,10 +110,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Resources\Icons.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Styles\MainSkin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -160,18 +141,17 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.vn-vi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Resource Include="Resources\Entypo.ttf" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Icons\" />
-    <Folder Include="SampleData\" />
     <Folder Include="Utilities\" />
     <Folder Include="Views\" />
   </ItemGroup>
@@ -179,7 +159,14 @@
     <SplashScreen Include="SplashScreen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Entypo-license.txt" />
+    <ProjectReference Include="..\Invisiblebook.data\Invisiblebook.data.csproj">
+      <Project>{536ad1b9-7dd7-44aa-b9d1-8a7d00bf2ec0}</Project>
+      <Name>Invisiblebook.data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Invisiblebook.Rest\Invisiblebook.Rest.csproj">
+      <Project>{f5572762-7fe2-41a0-a9dc-62f22a3c8c56}</Project>
+      <Name>Invisiblebook.Rest</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

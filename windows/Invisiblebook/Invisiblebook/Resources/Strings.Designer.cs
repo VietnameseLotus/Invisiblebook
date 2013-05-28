@@ -29,7 +29,7 @@ namespace Invisiblebook.Resources {
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Strings() {
+        public Strings() {
         }
         
         /// <summary>
@@ -133,6 +133,15 @@ namespace Invisiblebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Previous.
         /// </summary>
         public static string Previous {
@@ -156,6 +165,15 @@ namespace Invisiblebook.Resources {
         public static string WelcomeMessage {
             get {
                 return ResourceManager.GetString("WelcomeMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Writer.
+        /// </summary>
+        public static string Writer {
+            get {
+                return ResourceManager.GetString("Writer", resourceCulture);
             }
         }
     }

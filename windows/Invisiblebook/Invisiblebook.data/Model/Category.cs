@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Invisiblebook.Model
+namespace Invisiblebook.data.Model
 {
     public class Category
     {
@@ -12,6 +11,17 @@ namespace Invisiblebook.Model
         private string _Name;
         private Media _AudioName;
 
+        public Category()
+        {
+            _ID = -1;
+        }
+
+        public Category(int id, string name, Media audioName)
+        {
+            _ID = id;
+            _Name = name;
+            _AudioName = audioName;
+        }
         public int ID
         {
             get { return _ID; }

@@ -4,8 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization.Formatters.Binary;
-using Invisiblebook.Model;
-namespace Invisiblebook.Business
+using Invisiblebook.data.Model;
+namespace Invisiblebook.data.Business
 {
     /// <summary>
     /// This class manages a category repository

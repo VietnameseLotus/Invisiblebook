@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Invisiblebook.Model;
+using Invisiblebook.data.Model;
 
-namespace Invisiblebook.Business
+namespace Invisiblebook.data.Business
 {
     public interface ICategoryRepository
     {

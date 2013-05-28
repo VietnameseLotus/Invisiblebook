@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using Invisiblebook.Business;
-using Invisiblebook.Model;
+using Invisiblebook.data.Business;
+using Invisiblebook.data.Model;
 
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
@@ -51,6 +51,20 @@ namespace Invisiblebook.ViewModel
             SelectedBook = new Book();
             SelectedCategory = new Category();
             SelectedChapter = new Chapter();
+
+            //
+            Books.Add(new Book(1,"Cánh đồng bất tận", "Nguyễn Ngọc Tư","2011","NXB Tuổi Trẻ",new Media(),new Media()));
+            Books.Add(new Book(1, "Sống để kể lại", "Nguyễn Ngọc Tư", "2011", "NXB Tuổi Trẻ", new Media(), new Media()));
+
+            Categories.Add(new Category(1, "Cuộc sống", new Media()));
+            Categories.Add(new Category(1, "Tình yêu", new Media()));
+            Categories.Add(new Category(1, "Kỹ năng", new Media()));
+
+            Chapters.Add(new Chapter(1, "Giới thiệu sách nói", new Media(), new Media()));
+            Chapters.Add(new Chapter(1, "Trở thành biên tập viên ở El Espectador", new Media(), new Media()));
+            Chapters.Add(new Chapter(1, "Thử lửa với công việc phóng viên xung kích", new Media(), new Media()));
+            Chapters.Add(new Chapter(1, "Công việc viết phê bình điện ảnh", new Media(), new Media()));
+            
         }
 
         /// <summary>

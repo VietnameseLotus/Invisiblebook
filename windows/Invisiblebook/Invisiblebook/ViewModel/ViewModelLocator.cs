@@ -12,7 +12,7 @@
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
-using Invisiblebook.Model;
+using Invisiblebook.data.Model;
 using Microsoft.Practices.Unity;
 namespace Invisiblebook.ViewModel
 {

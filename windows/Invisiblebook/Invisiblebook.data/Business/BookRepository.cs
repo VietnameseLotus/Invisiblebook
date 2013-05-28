@@ -1,10 +1,9 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using Invisiblebook.Model;
-namespace Invisiblebook.Business
+using Invisiblebook.data.Model;
+namespace Invisiblebook.data.Business
 {
     public class BookRepository : IBookRepository
     {

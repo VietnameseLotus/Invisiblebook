@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using Invisiblebook.Model;
+using Invisiblebook.data.Model;
 
-namespace Invisiblebook.Business
+namespace Invisiblebook.data.Business
 {
     public class ChapterRepository : IChapterRepository
     {

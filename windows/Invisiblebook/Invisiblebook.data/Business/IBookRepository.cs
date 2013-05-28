@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Invisiblebook.Model;
-namespace Invisiblebook.Business
+using Invisiblebook.data.Model;
+namespace Invisiblebook.data.Business
 {
     public interface IBookRepository
     {

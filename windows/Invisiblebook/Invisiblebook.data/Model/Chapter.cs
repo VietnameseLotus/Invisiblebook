@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Invisiblebook.Model
+
+namespace Invisiblebook.data.Model
 {
     public class Chapter
     {

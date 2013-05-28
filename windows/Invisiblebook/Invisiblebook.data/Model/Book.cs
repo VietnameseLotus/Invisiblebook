@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
-namespace Invisiblebook.Model
+namespace Invisiblebook.data.Model
 {
     public class Book
     {
@@ -20,7 +19,7 @@ namespace Invisiblebook.Model
         private Media _AudioName; //Not be blank
         private Media _AudioDescription; //Can be blank
 
-        private List<Chapter> _Chapters;
+        private ICollection<Chapter> _Chapters;
         #endregion
 
         #region Constructor
@@ -90,7 +89,7 @@ namespace Invisiblebook.Model
         /// <summary>
         /// Danh sách chapter, có thể trống nếu không có chapter nào
         /// </summary>
-        public List<Chapter> Chapters
+        public ICollection<Chapter> Chapters
         {
             get { return _Chapters; }
             set { _Chapters = value; }
@@ -118,17 +117,6 @@ namespace Invisiblebook.Model
         {
             int chapterCountBefore = _Chapters.Count;
             _Chapters.Remove(chapter);
-            return (_Chapters.Count < chapterCountBefore);
-        }
-        /// <summary>
-        /// Loại bỏ chapter ở vị trí possiton
-        /// </summary>
-        /// <param name="possiton">Vị trí muốn bỏ</param>
-        /// <returns>True nếu loại bỏ thành công</returns>
-        public bool RemoveChapterAt(int possiton)
-        {
-            int chapterCountBefore = _Chapters.Count;
-            _Chapters.RemoveAt(possiton);
             return (_Chapters.Count < chapterCountBefore);
         }
         #endregion

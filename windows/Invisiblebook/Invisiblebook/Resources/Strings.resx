@@ -142,6 +142,9 @@
   <data name="Help" xml:space="preserve">
     <value>Help</value>
   </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <data name="Previous" xml:space="preserve">
     <value>Previous</value>
     <comment>Nút điều khiển trình nghe âm thanh</comment>
@@ -151,5 +154,8 @@
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Welcome to Apunta Notas :)</value>
+  </data>
+  <data name="Writer" xml:space="preserve">
+    <value>Writer</value>
   </data>
 </root>

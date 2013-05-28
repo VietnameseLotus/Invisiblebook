@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Practices.Unity;
-using Invisiblebook.Business;
-using Invisiblebook.Model;
+using Invisiblebook.data.Business;
+using Invisiblebook.data.Model;
 using Invisiblebook.ViewModel;
 namespace Invisiblebook
 {
